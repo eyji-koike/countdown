@@ -1,0 +1,13 @@
+.rocket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.solid-rocket {
+    align-self: center;
+    height: auto;
+    max-width: 70%;
+    width: 100%;
+}

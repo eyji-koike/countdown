@@ -1,0 +1,74 @@
+
+.top-image {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.bottom-image {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+}
+
+.hour-and-rocket-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.clock-text-button-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--black);
+}
+.legend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+    color: var(--black);
+}
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+.information {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 1rem;
+}
+.button-subscribe {
+    color: var(--text-color);
+    border: 1px solid var(--purple);
+    height: 2rem;
+    border-radius: 9px;
+    background-color: transparent;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
