@@ -1,0 +1,45 @@
+.clock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--black);
+}
+.clock-legend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 0px;
+    color: var(--black);
+}
+.clock-time {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 5rem;
+    column-gap: 20px;
+    color: var(--black);
+}
+
+.target-button {
+    opacity: 0;
+    border-radius: 10px;
+    border: none;
+    transition: ease-in-out;
+    max-width: 10rem;
+    align-self: center;
+}
+.target-button:hover {
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+}
+.target-button:active {
+    opacity: 1;
+}
+.form {
+    margin-top: 0.5rem;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+}

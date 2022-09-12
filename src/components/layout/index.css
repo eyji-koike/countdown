@@ -4,21 +4,26 @@
     top: 0;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 .bottom-image {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .container {
+    height: 100vh;
+    width: auto;
 }
 
 .hour-and-rocket-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 100vh;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
@@ -32,43 +37,37 @@
     justify-content: center;
 }
 
-.clock {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    font-size: 4rem;
-    font-weight: 300;
-    color: var(--black);
+@keyframes hvr-back-pulse {
+    50% {
+        background-color: rgba(108, 99, 255, 0.75);
+    }
 }
-.legend {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 20px;
-    color: var(--black);
+.hvr-back-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
 }
-.title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--purple);
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #2098D1;
+    background-color: #2098d1;
+    color: white;
 }
-.information {
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: normal;
-    margin: 1rem;
-}
-.button-subscribe {
-    color: var(--text-color);
-    border: 1px solid var(--purple);
-    height: 2rem;
-    border-radius: 9px;
-    background-color: transparent;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: bold;
-}
+
 

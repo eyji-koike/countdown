@@ -1,0 +1,10 @@
+.button-subscribe {
+    color: var(--text-color);
+    border: none solid var(--purple);
+    height: 2rem;
+    border-radius: 9px;
+    background-color: transparent;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
