@@ -1,6 +1,12 @@
 .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: bold;
     color: var(--purple);
+    width: 100%;
+    height: auto;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
 }

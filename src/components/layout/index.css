@@ -2,31 +2,37 @@
 .top-image {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: auto;
-    z-index: -1;
+
 }
 .bottom-image {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: auto;
-    z-index: -1;
+    filter: blendTrans(50%)blur(100%);
 }
 
 .container {
     height: 100vh;
     width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hour-and-rocket-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
-    align-items: center;
-    align-content: center;
+    height: fit-content;
+    align-content: stretch;
     justify-content: space-evenly;
+
 }
 .clock-text-button-container {
     display: flex;
@@ -35,39 +41,20 @@
     align-items: center;
     margin: 1rem;
     justify-content: center;
+    animation:tinDownIn 3s 0s backwards;
 }
 
-@keyframes hvr-back-pulse {
-    50% {
-        background-color: rgba(108, 99, 255, 0.75);
+@media only screen and (max-width: 600px) {
+    .clock-text-button-container {
+        width: 100vw;
     }
 }
-.hvr-back-pulse {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    overflow: hidden;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: color, background-color;
-    transition-property: color, background-color;
-}
-.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
-    -webkit-animation-name: hvr-back-pulse;
-    animation-name: hvr-back-pulse;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    background-color: #2098D1;
-    background-color: #2098d1;
-    color: white;
+
+@media only screen and (min-width: 601px) {
+    .clock-text-button-container {
+        max-width: 35vw;
+        max-height: 50vh;
+    }
 }
 
 

@@ -1,10 +1,64 @@
 .button-subscribe {
     color: var(--text-color);
     border: none solid var(--purple);
-    height: 2rem;
+    height: auto;
     border-radius: 9px;
     background-color: transparent;
     align-self: center;
-    font-size: 1rem;
+    font-size: 2.5vw;
     font-weight: bold;
+    animation-name: flash;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    background-color: white;
+    boxShadow: 24;
+    p: 4;
+    border-radius: 4px;
+
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.email-label, .nome-label {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email, .nome {
+    border-width: 0 0 1px 0;
+    border-bottom-color: #6C63FF;
+    color: var(--purple);
+    margin: 0 5px;
+    width: 300px;
+}
+.pronto{
+    border-width: 0 0 1px 0;
+    border-bottom-color: #6C63FF;
+    border-radius: 5px;
+    background-color: transparent;
+    width: auto;
+    margin: 5px;
+    align-self: center;
+}
+.email:active, .nome:active {
+    border-width: 0 0 1px 0;
+    border-bottom-color: var(--light-grey);
+    margin: 0 5px;
+    width: 300px;
+}
+.thanks {
+    align-self: center;
+    text-align: center;
+    margin: 5px;
 }

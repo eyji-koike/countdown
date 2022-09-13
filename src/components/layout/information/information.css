@@ -1,6 +1,10 @@
 .information {
+    max-width: 49vw;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3vw;
     font-weight: normal;
     margin: 1rem;
+    animation-name: flash;
+    animation-delay: 5s;
+    animation-duration: 5s;
 }
